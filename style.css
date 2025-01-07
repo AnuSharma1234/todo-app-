@@ -44,7 +44,7 @@ input{
   font-size:16px;
   color:orange;
 }
-button{
+.addBtn{
   border:none;
   outline:none;
   padding: 16px 50px;

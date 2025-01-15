@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<body lang="en">
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DO-IT</title>
+    <script src="https://kit.fontawesome.com/c300a13ff3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+<body>
+    <header>
+        <h1>TODO APP</h1>
+    </header>
     <div class="container">
-      <div class="todo-app">
-          <h2>TO-DO-LIST</h2>
-          <div class ="row">
-            <input type="text" id="myInput" placeholder="Add your task">
-            <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-          <ul id ="myUL">
-
-          </ul>
-      </div>
+        <div class="inputs">
+            <input type="text" placeholder="Enter your task here" id="inp">
+            <button onclick="Add()" type="submit">Add</button>
+        </div>
+        <div class="text">
+        </div>
+    </div> 
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Please Enter a task</p>
+        </div>
     </div>
-      <script src="script.js"></script>
-  </body>
+    <script defer src="script.js"></script>
+</body>
 </html>
